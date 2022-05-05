@@ -1,0 +1,74 @@
+[2022-05-05 07:42:24,788] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: elasticsearch_dag.connections_to_es 2022-05-05T07:42:14.830662+00:00 [queued]>
+[2022-05-05 07:42:24,806] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: elasticsearch_dag.connections_to_es 2022-05-05T07:42:14.830662+00:00 [queued]>
+[2022-05-05 07:42:24,807] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-05 07:42:24,807] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-05 07:42:24,807] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-05 07:42:24,833] {taskinstance.py:1087} INFO - Executing <Task(PostgresToElasticOperator): connections_to_es> on 2022-05-05T07:42:14.830662+00:00
+[2022-05-05 07:42:24,837] {standard_task_runner.py:52} INFO - Started process 269436 to run task
+[2022-05-05 07:42:24,844] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'elasticsearch_dag', 'connections_to_es', '2022-05-05T07:42:14.830662+00:00', '--job-id', '167', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/elasticsearch_dag.py', '--cfg-path', '/tmp/tmp_1sm_28j', '--error-file', '/tmp/tmp4kgy5kjz']
+[2022-05-05 07:42:24,846] {standard_task_runner.py:77} INFO - Job 167: Subtask connections_to_es
+[2022-05-05 07:42:24,921] {logging_mixin.py:104} INFO - Running <TaskInstance: elasticsearch_dag.connections_to_es 2022-05-05T07:42:14.830662+00:00 [running]> on host airflowvm
+[2022-05-05 07:42:25,010] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=elasticsearch_dag
+AIRFLOW_CTX_TASK_ID=connections_to_es
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-05T07:42:14.830662+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-05T07:42:14.830662+00:00
+[2022-05-05 07:42:25,022] {base.py:69} INFO - Using connection to: id: elasticsearch_default. Host: localhost, Port: 9200, Schema: http, Login: None, Password: None, extra: {}
+[2022-05-05 07:42:25,042] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2022-05-05 07:42:25,084] {logging_mixin.py:104} WARNING - /home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/connection/base.py:193 ElasticsearchDeprecationWarning: Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.
+[2022-05-05 07:42:25,087] {logging_mixin.py:104} WARNING - /home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/connection/base.py:193 ElasticsearchDeprecationWarning: [types removal] Specifying types in document index requests is deprecated, use the typeless endpoints instead (/{index}/_doc/{id}, /{index}/_doc, or /{index}/_create/{id}).
+[2022-05-05 07:42:25,089] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.020s]
+[2022-05-05 07:42:25,107] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.017s]
+[2022-05-05 07:42:25,120] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.013s]
+[2022-05-05 07:42:25,135] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.015s]
+[2022-05-05 07:42:25,155] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.020s]
+[2022-05-05 07:42:25,170] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.015s]
+[2022-05-05 07:42:25,188] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.018s]
+[2022-05-05 07:42:25,215] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.027s]
+[2022-05-05 07:42:25,229] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.014s]
+[2022-05-05 07:42:25,248] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.019s]
+[2022-05-05 07:42:25,266] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.017s]
+[2022-05-05 07:42:25,286] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.019s]
+[2022-05-05 07:42:25,305] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.019s]
+[2022-05-05 07:42:25,325] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.020s]
+[2022-05-05 07:42:25,361] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.035s]
+[2022-05-05 07:42:25,383] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.022s]
+[2022-05-05 07:42:25,401] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.017s]
+[2022-05-05 07:42:25,415] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.014s]
+[2022-05-05 07:42:25,427] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.012s]
+[2022-05-05 07:42:25,439] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.012s]
+[2022-05-05 07:42:25,455] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.016s]
+[2022-05-05 07:42:25,476] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.020s]
+[2022-05-05 07:42:25,509] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.034s]
+[2022-05-05 07:42:25,540] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.030s]
+[2022-05-05 07:42:25,562] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.023s]
+[2022-05-05 07:42:25,573] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.011s]
+[2022-05-05 07:42:25,586] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.012s]
+[2022-05-05 07:42:25,606] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.020s]
+[2022-05-05 07:42:25,637] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.031s]
+[2022-05-05 07:42:25,662] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.024s]
+[2022-05-05 07:42:25,689] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.027s]
+[2022-05-05 07:42:25,703] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.014s]
+[2022-05-05 07:42:25,714] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.011s]
+[2022-05-05 07:42:25,726] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.011s]
+[2022-05-05 07:42:25,737] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.011s]
+[2022-05-05 07:42:25,750] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.013s]
+[2022-05-05 07:42:25,764] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.013s]
+[2022-05-05 07:42:25,773] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.009s]
+[2022-05-05 07:42:25,785] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.012s]
+[2022-05-05 07:42:25,796] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.011s]
+[2022-05-05 07:42:25,807] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.011s]
+[2022-05-05 07:42:25,817] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.010s]
+[2022-05-05 07:42:25,835] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.017s]
+[2022-05-05 07:42:25,841] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.006s]
+[2022-05-05 07:42:25,850] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.008s]
+[2022-05-05 07:42:25,860] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.010s]
+[2022-05-05 07:42:25,875] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.015s]
+[2022-05-05 07:42:25,886] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.011s]
+[2022-05-05 07:42:25,897] {base.py:255} INFO - POST http://localhost:9200/connections/external [status:201 request:0.011s]
+[2022-05-05 07:42:25,915] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=elasticsearch_dag, task_id=connections_to_es, execution_date=20220505T074214, start_date=20220505T074224, end_date=20220505T074225
+[2022-05-05 07:42:26,001] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-05-05 07:42:26,017] {local_task_job.py:151} INFO - Task exited with return code 0

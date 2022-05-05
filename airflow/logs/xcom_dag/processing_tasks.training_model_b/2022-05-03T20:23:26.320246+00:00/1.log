@@ -1,0 +1,23 @@
+[2022-05-03 20:23:32,107] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: xcom_dag.processing_tasks.training_model_b 2022-05-03T20:23:26.320246+00:00 [queued]>
+[2022-05-03 20:23:32,158] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: xcom_dag.processing_tasks.training_model_b 2022-05-03T20:23:26.320246+00:00 [queued]>
+[2022-05-03 20:23:32,158] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-03 20:23:32,158] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-03 20:23:32,158] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-03 20:23:32,240] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): processing_tasks.training_model_b> on 2022-05-03T20:23:26.320246+00:00
+[2022-05-03 20:23:32,260] {standard_task_runner.py:52} INFO - Started process 125071 to run task
+[2022-05-03 20:23:32,269] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_b', '2022-05-03T20:23:26.320246+00:00', '--job-id', '78', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/xcom_dag.py', '--cfg-path', '/tmp/tmp3z7da1oc', '--error-file', '/tmp/tmpgfls8o5d']
+[2022-05-03 20:23:32,277] {standard_task_runner.py:77} INFO - Job 78: Subtask processing_tasks.training_model_b
+[2022-05-03 20:23:32,528] {logging_mixin.py:104} INFO - Running <TaskInstance: xcom_dag.processing_tasks.training_model_b 2022-05-03T20:23:26.320246+00:00 [running]> on host airflowvm
+[2022-05-03 20:23:32,856] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=xcom_dag
+AIRFLOW_CTX_TASK_ID=processing_tasks.training_model_b
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-03T20:23:26.320246+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-03T20:23:26.320246+00:00
+[2022-05-03 20:23:32,857] {logging_mixin.py:104} INFO - model's accuracy: 1.8312549624433934
+[2022-05-03 20:23:32,969] {python.py:151} INFO - Done. Returned value was: None
+[2022-05-03 20:23:33,047] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=xcom_dag, task_id=processing_tasks.training_model_b, execution_date=20220503T202326, start_date=20220503T202332, end_date=20220503T202333
+[2022-05-03 20:23:33,203] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-05-03 20:23:33,220] {local_task_job.py:151} INFO - Task exited with return code 0

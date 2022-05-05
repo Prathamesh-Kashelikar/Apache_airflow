@@ -1,0 +1,10 @@
+[2022-05-05 07:39:28.855] [remoteagent] [info] Extension host agent started.
+[2022-05-05 07:39:29.081] [remoteagent] [info] [127.0.0.1][a77fd153][ManagementConnection] New connection established.
+[2022-05-05 07:39:29.086] [remoteagent] [info] [127.0.0.1][143d4fbb][ExtensionHostConnection] New connection established.
+[2022-05-05 07:39:29.092] [remoteagent] [info] [127.0.0.1][143d4fbb][ExtensionHostConnection] <268394> Launched Extension Host Process.
+[2022-05-05 07:56:34.003] [remoteagent] [error] [File Watcher (parcel)] Unexpected error: std::bad_alloc (EUNKNOWN) (path: /home/airflow)
+[2022-05-05 07:56:34.004] [remoteagent] [error] [File Watcher (universal)] restarting watcher after error: std::bad_alloc
+[2022-05-05 08:11:57.445] [remoteagent] [error] [File Watcher (parcel)] Unexpected error: std::bad_alloc (EUNKNOWN) (path: /home/airflow)
+[2022-05-05 08:11:57.445] [remoteagent] [error] [File Watcher (universal)] restarting watcher after error: std::bad_alloc
+[2022-05-05 08:14:20.504] [remoteagent] [error] [File Watcher (parcel)] Unexpected error: std::bad_alloc (EUNKNOWN) (path: /home/airflow)
+[2022-05-05 08:14:20.504] [remoteagent] [error] [File Watcher (universal)] restarting watcher after error: std::bad_alloc

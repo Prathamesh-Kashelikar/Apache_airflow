@@ -1,0 +1,23 @@
+[2022-05-05T07:39:30.625Z] Validating found git in: git
+[2022-05-05T07:39:30.661Z] Using git 2.25.1 from git
+[2022-05-05T07:44:34.233Z] > git rev-parse --git-dir [2ms]
+[2022-05-05T07:44:34.242Z] Open repository: /home/airflow
+[2022-05-05T07:44:34.579Z] > git ls-files --stage -- /home/airflow/airflow/dags/xcom_dag.py [2ms]
+[2022-05-05T07:48:11.776Z] > git ls-files --stage -- /home/airflow/airflow/dags/xcom_dag.py [6ms]
+[2022-05-05T07:48:11.782Z] > git cat-file -s 32821b555aa00536e99926d8198fb7db642bc72c [2ms]
+[2022-05-05T07:48:23.401Z] > git ls-files --stage -- /home/airflow/airflow/dags/xcom_dag.py [11ms]
+[2022-05-05T07:48:23.411Z] > git cat-file -s 32821b555aa00536e99926d8198fb7db642bc72c [2ms]
+[2022-05-05T07:56:06.364Z] > git ls-files --stage -- /home/airflow/airflow/dags/xcom_dag.py [6ms]
+[2022-05-05T07:56:06.369Z] > git cat-file -s 32821b555aa00536e99926d8198fb7db642bc72c [1ms]
+[2022-05-05T07:59:20.941Z] > git ls-files --stage -- /home/airflow/airflow/dags/xcom_dag.py [5ms]
+[2022-05-05T07:59:20.948Z] > git cat-file -s 32821b555aa00536e99926d8198fb7db642bc72c [2ms]
+[2022-05-05T08:00:06.550Z] > git ls-files --stage -- /home/airflow/airflow/dags/xcom_dag.py [3ms]
+[2022-05-05T08:00:06.554Z] > git cat-file -s 32821b555aa00536e99926d8198fb7db642bc72c [1ms]
+[2022-05-05T08:00:20.635Z] > git ls-files --stage -- /home/airflow/airflow/dags/xcom_dag.py [9ms]
+[2022-05-05T08:00:20.639Z] > git cat-file -s 32821b555aa00536e99926d8198fb7db642bc72c [1ms]
+[2022-05-05T08:02:37.332Z] > git ls-files --stage -- /home/airflow/airflow/dags/xcom_dag.py [4ms]
+[2022-05-05T08:02:37.350Z] > git cat-file -s 32821b555aa00536e99926d8198fb7db642bc72c [1ms]
+[2022-05-05T08:03:30.853Z] > git ls-files --stage -- /home/airflow/airflow/dags/xcom_dag.py [6ms]
+[2022-05-05T08:03:30.858Z] > git cat-file -s 32821b555aa00536e99926d8198fb7db642bc72c [1ms]
+[2022-05-05T08:03:34.434Z] > git ls-files --stage -- /home/airflow/airflow/dags/xcom_dag.py [4ms]
+[2022-05-05T08:03:34.439Z] > git cat-file -s 32821b555aa00536e99926d8198fb7db642bc72c [2ms]

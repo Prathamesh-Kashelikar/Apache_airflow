@@ -1,0 +1,25 @@
+[2022-05-03 06:42:11,212] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_process.extracting_user 2022-05-02T00:00:00+00:00 [queued]>
+[2022-05-03 06:42:11,231] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_process.extracting_user 2022-05-02T00:00:00+00:00 [queued]>
+[2022-05-03 06:42:11,239] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-03 06:42:11,239] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-03 06:42:11,239] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-03 06:42:11,247] {taskinstance.py:1087} INFO - Executing <Task(SimpleHttpOperator): extracting_user> on 2022-05-02T00:00:00+00:00
+[2022-05-03 06:42:11,248] {standard_task_runner.py:52} INFO - Started process 2581 to run task
+[2022-05-03 06:42:11,260] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_process', 'extracting_user', '2022-05-02T00:00:00+00:00', '--job-id', '41', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_process.py', '--cfg-path', '/tmp/tmpzl906phh', '--error-file', '/tmp/tmpbfqp7wzb']
+[2022-05-03 06:42:11,261] {standard_task_runner.py:77} INFO - Job 41: Subtask extracting_user
+[2022-05-03 06:42:11,310] {logging_mixin.py:104} INFO - Running <TaskInstance: user_process.extracting_user 2022-05-02T00:00:00+00:00 [running]> on host airflowvm
+[2022-05-03 06:42:11,363] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_process
+AIRFLOW_CTX_TASK_ID=extracting_user
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-02T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-02T00:00:00+00:00
+[2022-05-03 06:42:11,363] {http.py:111} INFO - Calling HTTP method
+[2022-05-03 06:42:11,366] {base.py:69} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: {}
+[2022-05-03 06:42:11,367] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2022-05-03 06:42:11,788] {http.py:115} INFO - {"results":[{"gender":"female","name":{"title":"Mrs","first":"Deuvanira","last":"Lima"},"location":{"street":{"number":3311,"name":"Rua Das Flores "},"city":"Americana","state":"Paraná","country":"Brazil","postcode":79885,"coordinates":{"latitude":"-69.1601","longitude":"112.3429"},"timezone":{"offset":"-5:00","description":"Eastern Time (US & Canada), Bogota, Lima"}},"email":"deuvanira.lima@example.com","login":{"uuid":"38735307-c5fd-4c8f-bdb0-d11f478dbb1c","username":"beautifulsnake210","password":"quantum","salt":"u9ZWG8CZ","md5":"264a5ac2d9920fc96db4282096e5e095","sha1":"f0eb76ae80d5c9750f1ae4524451dc5f25160b6c","sha256":"623be6deb0184413d5282c665eb97158f27570ca2ac9d2c84b271d524c327100"},"dob":{"date":"1948-05-13T15:44:09.828Z","age":74},"registered":{"date":"2018-09-18T22:45:19.616Z","age":4},"phone":"(45) 8771-7738","cell":"(45) 0130-4821","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/women/26.jpg","medium":"https://randomuser.me/api/portraits/med/women/26.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/26.jpg"},"nat":"BR"}],"info":{"seed":"b58cf257ae44c133","results":1,"page":1,"version":"1.3"}}
+[2022-05-03 06:42:11,815] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_process, task_id=extracting_user, execution_date=20220502T000000, start_date=20220503T064211, end_date=20220503T064211
+[2022-05-03 06:42:11,835] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-05-03 06:42:11,870] {local_task_job.py:151} INFO - Task exited with return code 0
